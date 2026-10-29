@@ -5,9 +5,18 @@ import { App } from './app';
 import { MusicaComponent } from './components/musica-component/musica-component';
 import { CineComponent } from './components/cine-component/cine-component';
 import { HomeComponent } from './components/home-component/home-component';
+import { NotFoundComponent } from './components/not-found-component/not-found-component';
+import { MenuComponent } from './components/menu-component/menu-component';
 
 @NgModule({
-  declarations: [App, MusicaComponent, CineComponent, HomeComponent],
+  declarations: [
+    App,
+    MusicaComponent,
+    CineComponent,
+    HomeComponent,
+    NotFoundComponent,
+    MenuComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
