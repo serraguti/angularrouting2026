@@ -9,6 +9,7 @@ import { NotFoundComponent } from './components/not-found-component/not-found-co
 import { MenuComponent } from './components/menu-component/menu-component';
 import { FormsModule } from '@angular/forms';
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
+import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { NumerosParesComponent } from './components/numeros-pares-component/nume
     NotFoundComponent,
     MenuComponent,
     NumerosParesComponent,
+    TablaMultiplicarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

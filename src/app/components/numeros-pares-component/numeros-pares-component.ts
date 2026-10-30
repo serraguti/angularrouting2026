@@ -11,6 +11,10 @@ export class NumerosParesComponent {
   @ViewChild("cajafin") cajafin!: ElementRef;
   arrayNumeros!: number[];
 
+  constructor() {
+    this.arrayNumeros = []
+  }
+
   mostrarPares(): void {
     //debemos recuperar el numero de inicio de la caja
     //recuperamos el numero final de la caja
