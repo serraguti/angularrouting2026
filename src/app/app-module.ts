@@ -10,6 +10,7 @@ import { MenuComponent } from './components/menu-component/menu-component';
 import { FormsModule } from '@angular/forms';
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
 import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
+import { SelectNumerosDoblesComponent } from './components/select-numeros-dobles-component/select-numeros-dobles-component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TablaMultiplicarComponent } from './components/tabla-multiplicar-compon
     MenuComponent,
     NumerosParesComponent,
     TablaMultiplicarComponent,
+    SelectNumerosDoblesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],

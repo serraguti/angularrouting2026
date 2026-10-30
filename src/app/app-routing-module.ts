@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home-component/home-component';
 import { NotFoundComponent } from './components/not-found-component/not-found-component';
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
 import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
+import { SelectNumerosDoblesComponent } from './components/select-numeros-dobles-component/select-numeros-dobles-component';
 
 const routes: Routes = [
   { path: "musica", component: MusicaComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: "", component: HomeComponent},
   { path: "pares", component: NumerosParesComponent},
   { path: "tabla", component: TablaMultiplicarComponent},
+  { path: "selectnumeros", component: SelectNumerosDoblesComponent},
   { path: "**", component: NotFoundComponent}
 ];
 
