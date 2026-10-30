@@ -5,12 +5,14 @@ import { CineComponent } from './components/cine-component/cine-component';
 import { HomeComponent } from './components/home-component/home-component';
 import { NotFoundComponent } from './components/not-found-component/not-found-component';
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
+import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
 
 const routes: Routes = [
   { path: "musica", component: MusicaComponent },
   { path: "cine", component: CineComponent},
   { path: "", component: HomeComponent},
   { path: "pares", component: NumerosParesComponent},
+  { path: "tabla", component: TablaMultiplicarComponent},
   { path: "**", component: NotFoundComponent}
 ];
 

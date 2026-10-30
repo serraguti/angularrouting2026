@@ -1,1 +1,13 @@
-<p>tabla-multiplicar-component works!</p>
+<h1>Tabla multiplicar</h1>
+<form #form="ngForm">
+    Número: 
+    <input type="number" name="cajanumero" #cajanumero/>
+    <button (click)="generarTablaMultiplicar()">
+        Tabla multiplicar
+    </button>
+</form>
+<ul>
+    @for (num of resultados; track num){
+        <li>{{num}}</li>
+    }
+</ul>

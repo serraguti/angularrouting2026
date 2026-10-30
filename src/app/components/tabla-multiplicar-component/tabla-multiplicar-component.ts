@@ -15,6 +15,7 @@ export class TablaMultiplicarComponent {
   }
 
   generarTablaMultiplicar(): void {
+    this.resultados = []
     let numero = parseInt(this.cajanumero.nativeElement.value);
     for (let i = 1; i <= 10; i++){
       let operacion = numero * i;
