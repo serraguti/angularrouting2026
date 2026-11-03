@@ -19,7 +19,8 @@ export class NumeroDobleComponent implements OnInit {
   ngOnInit(): void {
     //EN ESTE METODO ES DONDE RECUPERAMOS LOS PARAMETROS
     this._active.params.subscribe((parametros: Params) => {
-      
+      let numero = parametros["numero"];
+      console.log(numero);
     })
   }
 }
