@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-musica-component',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './musica-component.css',
   templateUrl: './musica-component.html',
 })
-export class MusicaComponent {}
+export class MusicaComponent {
+
+}

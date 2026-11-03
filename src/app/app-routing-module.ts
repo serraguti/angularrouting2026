@@ -7,8 +7,11 @@ import { NotFoundComponent } from './components/not-found-component/not-found-co
 import { NumerosParesComponent } from './components/numeros-pares-component/numeros-pares-component';
 import { TablaMultiplicarComponent } from './components/tabla-multiplicar-component/tabla-multiplicar-component';
 import { SelectNumerosDoblesComponent } from './components/select-numeros-dobles-component/select-numeros-dobles-component';
+import { NumeroDobleComponent } from './components/numero-doble-component/numero-doble-component';
 
 const routes: Routes = [
+  { path: "doble", component: NumeroDobleComponent}, //SIN PARAMS
+  { path: "doble/:numero", component:NumeroDobleComponent}, //CON PARAMS
   { path: "musica", component: MusicaComponent },
   { path: "cine", component: CineComponent},
   { path: "", component: HomeComponent},
