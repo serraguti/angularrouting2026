@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
@@ -13,7 +13,8 @@ export class NumeroDobleComponent implements OnInit {
   //EN EL CONSTRUCTOR RECIBIMOS LA CLASE 
   //ActivatedRoute QUE CONTIENE LOS PARAMETROS
   constructor(
-    private _active: ActivatedRoute
+    private _active: ActivatedRoute,
+    private _cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit(): void {
@@ -27,6 +28,7 @@ export class NumeroDobleComponent implements OnInit {
       }else{
         this.mensaje = "No tenemos parámetro";
       }
+      this._cdr.detectChanges();
     })
   }
 }
