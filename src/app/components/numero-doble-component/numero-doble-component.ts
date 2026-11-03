@@ -9,7 +9,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class NumeroDobleComponent implements OnInit {
   doble: number = 0;
-
+  mensaje!: string;
   //EN EL CONSTRUCTOR RECIBIMOS LA CLASE 
   //ActivatedRoute QUE CONTIENE LOS PARAMETROS
   constructor(
@@ -19,8 +19,14 @@ export class NumeroDobleComponent implements OnInit {
   ngOnInit(): void {
     //EN ESTE METODO ES DONDE RECUPERAMOS LOS PARAMETROS
     this._active.params.subscribe((parametros: Params) => {
-      let numero = parametros["numero"];
-      console.log(numero);
+      //como el parametro es opcional, debemos preguntar si lo hemos
+      //recibido
+      if (parametros["numero"]){
+        let numero = parametros["numero"];
+        this.doble = numero * 2;
+      }else{
+        this.mensaje = "No tenemos parámetro";
+      }
     })
   }
 }
