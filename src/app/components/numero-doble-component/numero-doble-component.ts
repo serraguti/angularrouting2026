@@ -1,5 +1,5 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'app-numero-doble-component',
@@ -14,8 +14,13 @@ export class NumeroDobleComponent implements OnInit {
   //ActivatedRoute QUE CONTIENE LOS PARAMETROS
   constructor(
     private _active: ActivatedRoute,
-    private _cdr: ChangeDetectorRef
+    private _cdr: ChangeDetectorRef,
+    private _router: Router
   ) {}
+
+  navegarToCasa(): void {
+    this._router.navigate(["/"]);
+  }
 
   ngOnInit(): void {
     //EN ESTE METODO ES DONDE RECUPERAMOS LOS PARAMETROS
