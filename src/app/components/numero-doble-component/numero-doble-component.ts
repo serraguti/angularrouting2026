@@ -22,6 +22,10 @@ export class NumeroDobleComponent implements OnInit {
     this._router.navigate(["/"]);
   }
 
+  goToDoble(): void {
+    this._router.navigate(["/doble", 99]);
+  }
+
   ngOnInit(): void {
     //EN ESTE METODO ES DONDE RECUPERAMOS LOS PARAMETROS
     this._active.params.subscribe((parametros: Params) => {
